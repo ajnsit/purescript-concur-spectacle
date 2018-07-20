@@ -3,8 +3,15 @@
 [Spectacle Presentation library](https://github.com/FormidableLabs/spectacle) bindings for [Purescript-Concur](https://github.com/ajnsit/purescript-concur). For presentations that are pretty and functional!
 
 ## Usage
+
+### Run Dev Server
+
 > yarn
+
 > yarn start
+
+### Build production artifacts
+
 > yarn build
 
 ## Example -
