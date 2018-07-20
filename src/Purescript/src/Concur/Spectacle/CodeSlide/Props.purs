@@ -8,7 +8,7 @@ code = unsafeMkProp "code"
 type RangeOptions =
   { "title" :: String
   , "note" :: String
-  , "image" :: String
+  -- , "image" :: String
   , "loc" :: Array Int
   }
 

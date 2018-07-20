@@ -21,3 +21,9 @@ green :: String
 green = "#4caf50"
 orange :: String
 orange = "#ff9800"
+
+darkBg :: String
+darkBg = "rgb(45, 45, 45)"
+
+lightBg :: String
+lightBg = "rgb(204, 204, 204)"

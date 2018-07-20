@@ -46,6 +46,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
+    "ps": "cd src/Purescript && pulp --watch build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
@@ -93,6 +94,9 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "raw-loader": "^0.5.1"
-  }
+    "pulp": "^12.3.0",
+    "purescript": "^0.12.0",
+    "purescript-psa": "^0.7.1"
+  },
+  "homepage" : "http://ajnsit.github.io/purescript-concur-spectacle"
 }
