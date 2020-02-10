@@ -5,7 +5,7 @@ import Prelude
 import Concur.Core (Widget)
 import Concur.React (HTML)
 import Concur.React.DOM (button, button', div', text, input, h5')
-import Concur.React.Props (onClick, _type, value, onChange, checked, defaultValue)
+import Concur.React.Props (onClick, _type, onChange, checked, defaultValue)
 import Concur.Spectacle.CodeSlide.Props (RangeOptions)
 import Unsafe.Coerce (unsafeCoerce)
 

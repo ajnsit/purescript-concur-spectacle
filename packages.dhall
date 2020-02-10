@@ -123,6 +123,8 @@ let upstream =
 
 let overrides = {=}
 
-let additions = {=}
+let additions =
+  { concur-spectacle = ./spago.dhall as Location
+  }
 
 in  upstream // overrides // additions
