@@ -1,7 +1,6 @@
 module Concur.Spectacle.CodeSlide where
 
-import Concur.React (el')
-import Concur.React.DOM (El)
+import Concur.React.DOM (El, el')
 import React (Children, ReactClass, ReactElement, createElement)
 import React.DOM.Props (unsafeFromPropsArray)
 import React.DOM.Props as R

@@ -4,25 +4,23 @@ import Prelude hiding (div)
 
 import Colors (blue, red, stormy, white, darkBg)
 import Components (link)
-import Concur.Core (Widget, display)
+import Concur.Core (Widget)
+import Concur.Core.Types (display)
 import Concur.React (HTML, renderComponent)
 import Concur.React.DOM (div)
 import Concur.React.DOM as D
-import Concur.React.Props (Props)
+import Concur.React.Props (ReactProps)
 import Concur.React.Props as P
 import Concur.React.Run (runWidgetInDom)
 import Concur.Spectacle (codePane, deck, heading, slide)
 import Concur.Spectacle.CodeSlide (codeSlide)
 import Concur.Spectacle.CodeSlide.Props (RangeOptions, code, ranges)
-import Concur.Spectacle.Props (Progress(..), Transition(..), bgColor, lang, preload, progress, src, textColor, theme, transition, transitionDuration)
-import Control.Alternative (empty)
+import Concur.Spectacle.Props (Progress(..), Transition(..), bgColor, lang, preload, progress, textColor, theme, transition, transitionDuration)
 import Data.Array (concat)
 import Data.Time.Duration (Milliseconds(Milliseconds))
 import Effect (Effect)
 import Examples.Buttons (button2Ranges, button2Src, button2Wid, button3Ranges, button3Src, button3Wid, button4Ranges, button4Src, button4Wid, button5Ranges, button5Src, button5Wid, buttonRanges, buttonSrc, buttonWid, button6Ranges, button6Src, button6Wid, button7Ranges, button7Src, button7Wid, button8Ranges, button8Src, button8Wid)
-import Examples.Calc (calcSrc, calcWid, calcRanges)
-import Examples.Hello (helloSrc)
-import Examples.Todos (todos, todosRanges, todosSrc, todosWid)
+import Examples.Todos (todosRanges, todosSrc, todosWid)
 
 main :: Effect Unit
 main = runWidgetInDom "root" do
@@ -112,7 +110,7 @@ slides =
   ]
 
 -- Theming
-slideTheme :: forall a. Props a
+slideTheme :: forall a. ReactProps a
 slideTheme = theme
   { colors:
     { primary: stormy

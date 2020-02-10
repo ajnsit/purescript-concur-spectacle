@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+.spago
+/output
 
 # testing
 /coverage
@@ -21,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 src/Purescript/bower_components
 src/Purescript/output
+
+bower.json
