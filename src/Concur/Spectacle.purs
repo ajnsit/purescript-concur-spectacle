@@ -1,7 +1,6 @@
 module Concur.Spectacle where
 
-import Concur.React (el')
-import Concur.React.DOM (El)
+import Concur.React.DOM (El, el')
 import React (ReactElement, ReactClass, Children, createElement)
 import React.DOM.Props (Props) as R
 import React.DOM.Props (unsafeFromPropsArray)

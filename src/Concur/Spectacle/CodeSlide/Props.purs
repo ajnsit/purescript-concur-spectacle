@@ -1,8 +1,9 @@
 module Concur.Spectacle.CodeSlide.Props where
 
-import Concur.React.Props (Props, unsafeMkProp)
+import Concur.React.Props (ReactProps, unsafeMkProp)
 
-code :: forall a. String -> Props a
+
+code :: forall a. String -> ReactProps a
 code = unsafeMkProp "code"
 
 type RangeOptions =
@@ -12,5 +13,5 @@ type RangeOptions =
   , "loc" :: Array Int
   }
 
-ranges :: forall a. Array RangeOptions -> Props a
+ranges :: forall a. Array RangeOptions -> ReactProps a
 ranges = unsafeMkProp "ranges"

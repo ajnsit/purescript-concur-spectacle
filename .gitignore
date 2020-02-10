@@ -1,7 +1,9 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules
+.spago
+output
 
 # testing
 /coverage
@@ -15,9 +17,12 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.xdg_config_home
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 src/Purescript/bower_components
 src/Purescript/output
+
+bower.json
